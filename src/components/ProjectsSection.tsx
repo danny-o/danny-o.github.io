@@ -5,7 +5,7 @@ import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import { Smartphone, Github, ExternalLink } from "lucide-react";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
-import { AutoCarousel } from "./ui/AutoCarousel";
+import { AutoCarousel } from "./ui/autocarousel";
 
 
 
