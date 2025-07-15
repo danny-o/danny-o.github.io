@@ -33,16 +33,16 @@ const ProjectsSection = () => {
       title: "Trading App",
       description: "An application that helps beginner traders kickstart their trading journey. The app automatically copies trading orders placed by select professional traders. Users are also able to set trading configurations to manage risk and can view their trading statistics to inform on their trading settings.Features an easy to use UI and a smooth user experience.",
       image: "/assets/trading-app6.png",
-      appScreens:  [
+      appScreens: [
         "/assets/trading-app1.png",
         "/assets/trading-app2.png",
         "/assets/trading-app3.png",
         "/assets/trading-app4.png",
         "/assets/trading-app5.png"
       ],
-      technologies: ["Kotlin", "Material Design", "Modern Android Development", "Firebase","Native Java"],
+      technologies: ["Kotlin", "Material Design", "Modern Android Development", "Firebase", "Native Java"],
       github: "#",
-      demo: "https://play.google.com/store/apps/details?id=com.digitalskies.testapp",    
+      demo: "https://play.google.com/store/apps/details?id=com.digitalskies.testapp",
       featured: true,
     },
     {
@@ -58,9 +58,9 @@ const ProjectsSection = () => {
         "/assets/ride-hailing6.png",
         "/assets/ride-hailing7.png"
       ],
-      technologies: ["Java", "Google Maps", "REST APIs", "Material Design","Firebase Cloud Messaging", "Payment APIs"],
+      technologies: ["Java", "Google Maps", "REST APIs", "Material Design", "Firebase Cloud Messaging", "Payment APIs"],
       github: "#",
-      demo: "https://www.mydrupp.com/",    
+      demo: "https://www.mydrupp.com/",
       featured: true,
     },
     {
@@ -72,20 +72,20 @@ const ProjectsSection = () => {
         "/assets/inventory-app2.png",
 
       ],
-      technologies: ["Kotlin", "Firebase", "WorkManager", "Encryption"],
+      technologies: ["Kotlin", "Firebase", "WorkManager", "Encryption", "Room Database", "REST API", "Oauth2"],
       github: "#",
       demo: "#",
       featured: false,
     },
   ];
 
-  const project1 = projects.filter(project=>project.featured)[0]
-  const project2 = projects.filter(project=>project.featured)[1]
+  const project1 = projects.filter(project => project.featured)[0]
+  const project2 = projects.filter(project => project.featured)[1]
 
   return (
     <section id="projects" className="py-8 bg-slate-800/30">
-  
-        <div className="text-center mb-4">
+
+      <div className="text-center mb-4">
         <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
           Featured <span className="text-cyan-500 font-bold">Projects</span>
         </h2>
@@ -95,8 +95,8 @@ const ProjectsSection = () => {
       </div>
 
 
-      
-      
+
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="rounded-xl p-2 transition-all duration-300 hover:border-cyan-400/50">
 
@@ -152,7 +152,7 @@ const ProjectsSection = () => {
 
               </div>
 
-            
+
 
             </div>
           </div>
@@ -220,11 +220,11 @@ const ProjectsSection = () => {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-2 lg:px-4">
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-4 flex flex-col">
-          {projects.filter(project=>!project.featured).map((project, index) => (
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-4">
+          {projects.filter(project => !project.featured).map((project, index) => (
             <div
               key={index}
-              className={`group relative bg-gradient-to-br from-slate-800/50 to-slate-900/50 rounded-xl overflow-hidden border border-slate-600/50 hover:border-cyan-400/50 transform hover:scale-[1.02] transition-all duration-300 ${project.featured ? "md:col-span-2 lg:col-span-1" : ""
+              className={`group relative bg-gradient-to-br from-slate-800/50 to-slate-900/50 rounded-xl overflow-hidden border border-slate-600/50 hover:border-cyan-400/50 transform hover:scale-[1.02] transition-all duration-300 flex flex-col ${project.featured ? "md:col-span-2 lg:col-span-1" : ""
                 }`}
             >
               {/* App Screens Carousel for Featured Projects */}
@@ -235,46 +235,46 @@ const ProjectsSection = () => {
                   alt={project.title}
                   className="w-40 object-contained group-hover:scale-105 transition-transform duration-500 self-stretch"
                 />
-        
+
               </div>
 
-            <div>
+              <div className="flex-1 flex flex-col">
 
-            <div className="pt-1 pb-8 px-8">
-                <div className="flex items-center justify-center">
-                  <h3 className="text-xl font-bold text-white group-hover:text-cyan-400 transition-colors self-center">
-                    {project.title}
-                  </h3>
-                  <Smartphone className="text-cyan-400 ms-5" size={20} />
+                <div className="pt-1 pb-8 px-8">
+                  <div className="flex items-center justify-center">
+                    <h3 className="text-xl font-bold text-white group-hover:text-cyan-400 transition-colors self-center">
+                      {project.title}
+                    </h3>
+                    <Smartphone className="text-cyan-400 ms-5" size={20} />
+                  </div>
+
+                  <p className="text-white leading-relaxed">
+                    {project.description}
+                  </p>
+
                 </div>
 
-                <p className="text-white leading-relaxed">
-                  {project.description}
-                </p>
-          
-            </div>
+              </div>
 
-            </div>
+              <div className="pt-1 pb-8 px-8">
 
-              <div className="pt-1 pb-8 px-8 flex-1">  
-           
-              <div className="self-stretch">
+                <div className="self-stretch">
 
-                <div className="flex flex-wrap gap-2">
-                  {project.technologies.map((tech) => (
-                    <span
-                      key={tech}
-                      className="px-3 py-1 bg-cyan-500/20 border border-cyan-400/30 rounded-full text-cyan-300 text-sm"
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
+                  <div className="flex flex-wrap gap-2">
+                    {project.technologies.map((tech) => (
+                      <span
+                        key={tech}
+                        className="px-3 py-1 bg-cyan-500/20 border border-cyan-400/30 rounded-full text-cyan-300 text-sm"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
 
-                <div className="flex space-x-4 pt-4">
-                 
+                  <div className="flex space-x-4 pt-4">
 
-                      {/* <Button
+
+                    {/* <Button
                       variant="outline"
                       size="sm"
                       className="border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-slate-900"
@@ -286,30 +286,30 @@ const ProjectsSection = () => {
                       </a>
                       </Button> */}
 
-            
-                  
-                  <Button
-                    size="sm"
-                    className="bg-gradient-to-r from-cyan-500 to-purple-500 hover:from-cyan-600 hover:to-purple-600"
-                    asChild
-                  >
-                    <a href={project.demo} className="flex items-center space-x-2">
-                      <ExternalLink size={16} />
-                      <span>Link</span>
-                    </a>
-                  </Button>
-                </div>
+
+
+                    <Button
+                      size="sm"
+                      className="bg-gradient-to-r from-cyan-500 to-purple-500 hover:from-cyan-600 hover:to-purple-600"
+                      asChild
+                    >
+                      <a href={project.demo} className="flex items-center space-x-2">
+                        <ExternalLink size={16} />
+                        <span>Link</span>
+                      </a>
+                    </Button>
+                  </div>
                 </div>
 
               </div>
 
-      
-   
+
+
             </div>
           ))}
         </div>
       </div>
-      
+
     </section>
 
   );
