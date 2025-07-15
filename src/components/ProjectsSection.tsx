@@ -4,7 +4,6 @@ import { User, Code, Briefcase } from "lucide-react";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import { Smartphone, Github, ExternalLink } from "lucide-react";
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { AutoCarousel } from "./ui/autocarousel";
 
 
@@ -233,6 +232,7 @@ const ProjectsSection = () => {
                 <img
                   src={project.image}
                   alt={project.title}
+                  loading="lazy"
                   className="w-40 object-contained group-hover:scale-105 transition-transform duration-500 self-stretch"
                 />
 

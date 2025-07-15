@@ -29,6 +29,7 @@ export const AutoCarousel = ({ images, projectTitle }: { images: string[]; proje
               <img
                 src={screen}
                 alt={`${projectTitle} screen ${index + 1}`}
+                loading="lazy"
                 className="w-60 object-contain self-start"
               />
             </div>

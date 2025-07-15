@@ -29,7 +29,7 @@ const AboutSection = () => {
               <div className="flex items-center space-x-6 mb-8">
                 <Avatar className="w-32 h-32 border-4 border-gradient-to-r from-cyan-400 to-purple-400">
                   <AvatarImage
-                    src="src/components/assets/pp.png"
+                    src="assets/pp.png"
                     alt="Professional headshot"
                     className="object-cover"
                   />
