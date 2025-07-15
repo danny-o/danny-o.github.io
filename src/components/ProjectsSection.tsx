@@ -16,13 +16,13 @@ const ProjectsSection = () => {
     {
       title: "Virtualclothier E-Commerce App",
       description: "A fully fledged e-commerce open-source app. Complete with user-authentication, product  tagging, searching, checkout and admin management. It features a clean UI and a smooth user-flow. It features clothes for demo purposes but can be used for sale of any products.\n     \n\tProgrammed in Java and follows modern android development practices.",
-      image: "src/components/assets/e-commerce-app-demo.png",
+      image: "/assets/e-commerce-app-demo.png",
       appScreens: [
-        "src/components/assets/ecommerce_app_home.png",
-        "src/components/assets/ecommerce_app_product_detail.png",
-        "src/components/assets/ecommerce_app_checkout_product_detail_slanted.png",
-        "src/components/assets/ecommerce_app_profile.png",
-        "src/components/assets/ecommerce_app_checkout.png"
+        "/assets/ecommerce_app_home.png",
+        "/assets/ecommerce_app_product_detail.png",
+        "/assets/ecommerce_app_checkout_product_detail_slanted.png",
+        "/assets/ecommerce_app_profile.png",
+        "/assets/ecommerce_app_checkout.png"
       ],
       technologies: ["Java", "MVVM", "Firebase", "Material Design", "Android Navigation", "Modern Android Development"],
       github: "#",
@@ -32,13 +32,13 @@ const ProjectsSection = () => {
     {
       title: "Trading App",
       description: "An application that helps beginner traders kickstart their trading journey. The app automatically copies trading orders placed by select professional traders. Users are also able to set trading configurations to manage risk and can view their trading statistics to inform on their trading settings.Features an easy to use UI and a smooth user experience.",
-      image: "src/components/assets/trading-app6.png",
+      image: "/assets/trading-app6.png",
       appScreens:  [
-        "src/components/assets/trading-app1.png",
-        "src/components/assets/trading-app2.png",
-        "src/components/assets/trading-app3.png",
-        "src/components/assets/trading-app4.png",
-        "src/components/assets/trading-app5.png"
+        "/assets/trading-app1.png",
+        "/assets/trading-app2.png",
+        "/assets/trading-app3.png",
+        "/assets/trading-app4.png",
+        "/assets/trading-app5.png"
       ],
       technologies: ["Kotlin", "Material Design", "Modern Android Development", "Firebase","Native Java"],
       github: "#",
@@ -48,15 +48,15 @@ const ProjectsSection = () => {
     {
       title: "Drupp Ride Hailing App",
       description: "A ride-hailing app developed for Drupp Ltd Nigeria. Features ability to see nearby drivers, one-on-one communication between drivers and riders, ride  live-tracking, payment system among other features of ride-hailing apps. Easy to use and a visually appealing UI.The app  uses android and third-party APIs to be able to support these capabilities. ",
-      image: "src/components/assets/ride-hailing1.png",
+      image: "/assets/ride-hailing1.png",
       appScreens: [
-        "src/components/assets/ride-hailing1.png",
-        "src/components/assets/ride-hailing2.png",
-        "src/components/assets/ride-hailing3.png",
-        "src/components/assets/ride-hailing4.png",
-        "src/components/assets/ride-hailing5.png",
-        "src/components/assets/ride-hailing6.png",
-        "src/components/assets/ride-hailing7.png"
+        "/assets/ride-hailing1.png",
+        "/assets/ride-hailing2.png",
+        "/assets/ride-hailing3.png",
+        "/assets/ride-hailing4.png",
+        "/assets/ride-hailing5.png",
+        "/assets/ride-hailing6.png",
+        "/assets/ride-hailing7.png"
       ],
       technologies: ["Java", "Google Maps", "REST APIs", "Material Design","Firebase Cloud Messaging", "Payment APIs"],
       github: "#",
@@ -66,10 +66,10 @@ const ProjectsSection = () => {
     {
       title: "Plada Inventory Management App",
       description: "An Inventory management app made for SDV ,Portugal. It features inter-shop inventory transfers, sales recording, Sample registration and periodic inventory events.\n\tThe app is data heavy and called for rigorous testing to ensure accuracy.",
-      image: "src/components/assets/inventory-app6.png",
+      image: "/assets/inventory-app6.png",
       appScreens: [
-        "src/components/assets/inventory-app1.png",
-        "src/components/assets/inventory-app2.png",
+        "/assets/inventory-app1.png",
+        "/assets/inventory-app2.png",
 
       ],
       technologies: ["Kotlin", "Firebase", "WorkManager", "Encryption"],
